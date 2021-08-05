@@ -35,17 +35,17 @@
   <body>
     <div class="w2p_flash alert alert-dismissable">{{=response.flash or ''}}</div>
     <!-- Navbar ======================================= -->
-    <nav class="navbar navbar-light navbar-expand-md bg-faded bg-dark navbar-dark justify-content-center">
-       <a href="http://web2py.com" class="navbar-brand d-flex w-50 mr-auto">web2py</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-light navbar-expand-md" style="background-color: #e3f2fd;">
+        <img alt="Autservice" width="60" height="60" data-sticky-width="35" data-sticky-height="35" data-sticky-top="42" src="https://autservice.com.br/admin/assets/upload_imagem/667eb3644b0d33f3ed47d4e90481d980.png" style="top: 0px; width: 60px; height: 60px;">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 25px">
          <span class="navbar-toggler-icon"></span>
        </button>
        <div class="navbar-collapse collapse w-100" id="navbarNavDropdown">
-         <ul class="navbar-nav w-100 justify-content-center">
+         <ul class="navbar-nav w-100 justify-content-md-start" style="margin-left: 50px">
           {{for _item in response.menu or []:}}
           {{if len(_item)<4 or not _item[3]:}}
           <li class="nav-item {{if _item[1]:}}active{{pass}}">
-            <a class="nav-link" href="{{=_item[2]}}">{{=_item[0]}}</a>
+            <a class="nav-link text-uppercase" href="{{=_item[2]}}">{{=_item[0]}}</a>
           </li>
           {{else:}}
           <li class="nav-item dropdown">
@@ -59,6 +59,7 @@
           {{pass}}
           {{pass}}
         </ul>
+         <!--
          <form class="form-inline my-2 my-lg-0">
              <input class="form-control mr-sm-2" type="text" placeholder="Search">
          </form>
@@ -88,6 +89,7 @@
           </li>
         </ul>
         {{pass}}
+        -->
       </div>
     </nav>
 

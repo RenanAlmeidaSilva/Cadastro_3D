@@ -5,14 +5,20 @@
 # this is the main application menu add/remove items as required
 # ----------------------------------------------------------------------------------------------------------------------
 
-response.menu = [
-    (T('Home'), False, URL('default', 'index'), [])
-]
+response.menu = []
+
+if not configuration.get('app.production'):
+    _app = request.application
+    response.menu += [
+        (T('Modelos'), False, URL('welcome', 'api', 'index')),
+        (T('Cadastro'), False, URL('welcome', 'api', 'cadastro'))
+    ]
 
 # ----------------------------------------------------------------------------------------------------------------------
 # provide shortcuts for development. you can remove everything below in production
 # ----------------------------------------------------------------------------------------------------------------------
 
+"""
 if not configuration.get('app.production'):
     _app = request.application
     response.menu += [
@@ -107,4 +113,4 @@ if not configuration.get('app.production'):
              'http://webchat.freenode.net/?channels=web2py'),
         ]),
     ]
-
+"""
