@@ -218,6 +218,7 @@
 'Submit': 'Enviar',
 'Support': 'Suporte',
 'Table': 'Tabela',
+'teste': 'teste',
 'The "query" is a condition like "db.table1.field1==\'value\'". Something like "db.table1.field1==db.table2.field2" results in a SQL JOIN.': 'Uma "consulta" é uma condição como "db.tabela1.campo1==\'valor\'". Expressões como "db.tabela1.campo1==db.tabela2.campo2" resultam em um JOIN SQL.',
 'The Core': 'The Core',
 'The output of the file is a dictionary that was rendered by the view %s': 'A saída do arquivo é um dicionário que foi apresentado pela visão %s',

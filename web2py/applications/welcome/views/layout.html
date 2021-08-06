@@ -45,7 +45,7 @@
           {{for _item in response.menu or []:}}
           {{if len(_item)<4 or not _item[3]:}}
           <li class="nav-item {{if _item[1]:}}active{{pass}}">
-            <a class="nav-link text-uppercase" href="{{=_item[2]}}">{{=_item[0]}}</a>
+            <a class="nav-link text-capitalize" href="{{=_item[2]}}">{{=_item[0]}}</a>
           </li>
           {{else:}}
           <li class="nav-item dropdown">

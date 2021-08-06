@@ -1,16 +1,26 @@
 {{extend 'layout.html'}}
 
 <h2 style="text-align: center">Modelos 3D</h2>
-<div id="busca" class="text-center" >
-    <div class="form-row">
-        <div class="col-4 offset-4">
+<div id="busca">
+    <div class="form-row col-8 offset-8">
+        <div class="col">
             <input type="text" class="form-control" id="filtroNome" placeholder="Nome do Produto">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="filtroNome" placeholder="Categoria">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="filtroNome" placeholder="Autor">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="filtroNome" placeholder="Tempo">
         </div>
         <div class="col-auto">
             <button class="btn btn-primary" onclick="chamaFiltro()">Filtrar</button>
         </div>
     </div>
 </div>
+
 
 <script>
 
@@ -19,5 +29,18 @@
 
 
 <style>
+    body {
+        margin: auto;
+        padding: 0;
+        align-items: center;
+    }
 
+    .main-container {
+        text-align: center;
+    }
+
+    #busca {
+        left: 50%;
+        border: 1px solid red;
+    }
 </style>
