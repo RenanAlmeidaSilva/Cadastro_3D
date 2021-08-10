@@ -5,6 +5,14 @@
 # -------------------------------------------------------------------------
 
 # ---- example index page ----
+
+def index():
+    return dict(message=T)
+
+def cadastro():
+    return dict(message=T)
+
+'''
 def index():
     response.flash = T("Hello World")
     return dict(message=T('Welcome to web2py!'))
@@ -56,3 +64,4 @@ def download():
     http://..../[app]/default/download/[filename]
     """
     return response.download(request, db)
+'''

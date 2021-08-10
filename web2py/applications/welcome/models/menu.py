@@ -10,8 +10,8 @@ response.menu = []
 if not configuration.get('app.production'):
     _app = request.application
     response.menu += [
-        (T('Modelos'), False, URL('welcome', 'api', 'index')),
-        (T('Cadastro'), False, URL('welcome', 'api', 'cadastro'))
+        (T('Modelos'), False, URL('welcome', 'default', 'index')),
+        (T('Cadastro'), False, URL('welcome', 'default', 'cadastro'))
     ]
 
 # ----------------------------------------------------------------------------------------------------------------------
